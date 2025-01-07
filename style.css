@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilucious's Cove - Rules</title>
+    <style>
+        @font-face {
+            font-family: 'Charles Wright';
+            src: url('https://fonts.cdnfonts.com/s/58834/CharlesWright.woff') format('woff');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Charles Wright', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #1e3c72);
+            background-size: 400% 400%;
+            color: white;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .rules-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .rule {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 800px;
+            font-size: 1.2rem;
+            animation: fadeInScale 1s ease-in;
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .rule h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌊 Welcome to Ilucious's Cove! 🌊</h1>
+
+    <div class="rules-container">
+        <div class="rule">
+            <h2>🌟 1. Respect Everyone</h2>
+            <p>Treat all members with kindness and respect. Bullying, harassment, or hate speech won’t be tolerated.</p>
+        </div>
+        <div class="rule">
+            <h2>🎮 2. Play Fair</h2>
+            <p>Cheating or hacking in games is not allowed. Let’s keep the fun fair for everyone!</p>
+        </div>
+        <div class="rule">
+            <h2>🔇 3. Keep It Clean</h2>
+            <p>Avoid swearing or using offensive language, especially in voice chats. Let’s maintain a positive vibe!</p>
+        </div>
+        <div class="rule">
+            <h2>🗨️ 4. Stay on Topic</h2>
+            <p>Use the correct channels for your conversations. This helps keep the server organized and enjoyable for all.</p>
+        </div>
+        <div class="rule">
+            <h2>📜 5. Follow Discord’s Guidelines</h2>
+            <p>Ensure your actions align with Discord’s Community Guidelines.</p>
+        </div>
+    </div>
+</body>
+</html>
